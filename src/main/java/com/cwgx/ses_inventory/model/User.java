@@ -1,4 +1,4 @@
-package com.cwgx.newhorizon.model;
+package com.cwgx.ses_inventory.model;
 
 import javax.persistence.*;
 

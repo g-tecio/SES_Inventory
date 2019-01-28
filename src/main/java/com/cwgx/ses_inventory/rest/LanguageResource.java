@@ -1,4 +1,4 @@
-package com.cwgx.newhorizon.rest;
+package com.cwgx.ses_inventory.rest;
 
 import java.util.Arrays;
 import java.util.List;
@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.cwgx.newhorizon.model.Language;
+import com.cwgx.ses_inventory.model.Language;
 
 @RestController
 public class LanguageResource {

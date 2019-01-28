@@ -1,7 +1,7 @@
-package com.cwgx.newhorizon.rest;
+package com.cwgx.ses_inventory.rest;
 
-import com.cwgx.newhorizon.model.User;
-import com.cwgx.newhorizon.repositories.UserRepository;
+import com.cwgx.ses_inventory.model.User;
+import com.cwgx.ses_inventory.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

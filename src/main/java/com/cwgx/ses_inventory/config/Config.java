@@ -1,4 +1,4 @@
-package com.cwgx.newhorizon.config;
+package com.cwgx.ses_inventory.config;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

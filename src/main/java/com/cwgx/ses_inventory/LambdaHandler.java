@@ -1,4 +1,4 @@
-package com.cwgx.newhorizon;
+package com.cwgx.ses_inventory;
 
 import java.io.IOException;
 import java.io.InputStream;
