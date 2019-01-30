@@ -15,11 +15,11 @@ public class Item {
     @Length(min=5, max=45)
     private String description;
     @Length(min=5, max=45)
-    private String taxable_value;
+    private Float taxable_value;
     @Length(min=5, max=45)
     private String status;
     @Length(min=5, max=45)
-    private String tax_exempt_code;
+    private Integer tax_exempt_code;
 
     public Integer getId_Item() {
         return id_Item;
@@ -45,23 +45,26 @@ public class Item {
     public void setDescription(String description) {
         this.description = description;
     }
-    public String getTaxable_value() {
+    public Float getTaxable_value() {
         return taxable_value;
     }
-    public void setTaxable_value(String taxable_value) {
+    public void setTaxable_value(Float taxable_value) {
         this.taxable_value = taxable_value;
     }
+
     public String getStatus() {
         return status;
     }
+
     public void setStatus(String status) {
         this.status = status;
     }
-    public String getTax_exempt_code() {
+
+    public Integer getTax_exempt_code() {
         return tax_exempt_code;
     }
-    public void setTax_exempt_code(String tax_exempt_code) {
+
+    public void setTax_exempt_code(Integer tax_exempt_code) {
         this.tax_exempt_code = tax_exempt_code;
     }
-
 }
