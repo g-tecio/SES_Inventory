@@ -5,7 +5,7 @@ import org.hibernate.validator.constraints.Length;
 import javax.persistence.*;
 
 @Entity // This tells Hibernate to make a table out of this class
-@Table(name = "ItemImage")
+@Table(name = "Item_Image")
 public class ItemImage {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
