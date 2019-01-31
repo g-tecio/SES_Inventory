@@ -5,11 +5,11 @@ import org.hibernate.validator.constraints.Length;
 import javax.persistence.*;
 
 @Entity // This tells Hibernate to make a table out of this class
-@Table(name = "Item_Image")
+@Table(name = "item_image")
 public class ItemImage {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
-    private Integer id_Item_iamge;
+    private Integer id_Item_image;
     private Integer item_id;
     @Length(min=5, max=45)
     private String source;
@@ -18,10 +18,10 @@ public class ItemImage {
     private String status;
 
     public Integer getId_Item_iamge() {
-        return id_Item_iamge;
+        return id_Item_image;
     }
     public void setId_Item_iamge(Integer id_Item_iamge) {
-        this.id_Item_iamge = id_Item_iamge;
+        this.id_Item_image = id_Item_iamge;
     }
     public Integer getItem_id() {
         return item_id;

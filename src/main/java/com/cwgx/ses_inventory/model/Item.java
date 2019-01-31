@@ -8,23 +8,23 @@ import javax.persistence.*;
 public class Item {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
-    private Integer id_Item;
+    private Integer id_item;
     private Integer category_id;
     @Length(min=5, max=45)
     private String name;
     @Length(min=5, max=45)
     private String description;
-    @Length(min=5, max=45)
+    //@Length(min=5, max=45)
     private Float taxable_value;
     private String status;
-    @Length(min=5, max=45)
+    //@Length(min=5, max=45)
     private Integer tax_exempt_code;
 
     public Integer getId_Item() {
-        return id_Item;
+        return id_item;
     }
     public void setId_Item(Integer id_Item) {
-        this.id_Item = id_Item;
+        this.id_item = id_Item;
     }
     public Integer getCategory_id() {
         return category_id;

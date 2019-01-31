@@ -2,7 +2,7 @@ package com.cwgx.ses_inventory.model;
 import org.hibernate.validator.constraints.Length;
 import javax.persistence.*;
 @Entity // This tells Hibernate to make a table out of this class
-@Table(name = "Category")
+@Table(name = "category")
 public class Category {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
