@@ -11,6 +11,7 @@ public class StockItem {
 
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
+    private Integer stock_item_id;
 
     private Integer item_id;
 
@@ -90,5 +91,13 @@ public class StockItem {
 
     public void setFragile_flag(boolean fragile_flag) {
         this.fragile_flag = fragile_flag;
+    }
+
+    public Integer getStock_item_id() {
+        return stock_item_id;
+    }
+
+    public void setStock_item_id(Integer stock_item_id) {
+        this.stock_item_id = stock_item_id;
     }
 }
