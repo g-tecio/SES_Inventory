@@ -5,6 +5,7 @@ import com.cwgx.ses_inventory.repositories.ItemSpecsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+@RestController
 public class ItemSpecsResource {
     @Autowired
     private ItemSpecsRepository itemspecsRepository;

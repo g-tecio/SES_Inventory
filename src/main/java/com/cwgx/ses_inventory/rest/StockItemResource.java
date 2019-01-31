@@ -5,6 +5,7 @@ import com.cwgx.ses_inventory.repositories.StockItemRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+@RestController
 public class StockItemResource {
     @Autowired
     private StockItemRepository stockitemRepository;

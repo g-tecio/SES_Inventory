@@ -5,6 +5,7 @@ import com.cwgx.ses_inventory.repositories.ItemImageRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+@RestController
 public class ItemImageResource {
     @Autowired
     private ItemImageRepository itemimageRepository;
