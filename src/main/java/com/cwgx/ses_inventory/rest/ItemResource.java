@@ -16,14 +16,14 @@ public class ItemResource {
         return itemRepository.findAll();
     }
 
-    @RequestMapping(path = "/item/{itemId}", method = RequestMethod.GET)
-    public @ResponseBody Item userFindByName(@PathVariable String itemId) {
+    @RequestMapping(path = "/item/{itemName}", method = RequestMethod.GET)
+    public @ResponseBody Item userFindByName(@PathVariable String itemName) {
         // This returns a JSON or XML with the users
-        return itemRepository.itemFindByName(itemId);
+        return itemRepository.itemFindByName(itemName);
     }
 
     @PostMapping("/item/post")
-    Item newCategory(@RequestBody Item newCategory){
-        return itemRepository.save(newCategory);
+    Item newItem(@RequestBody Item newItem){
+        return itemRepository.save(newItem);
     }
 }

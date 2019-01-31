@@ -7,4 +7,4 @@ import org.springframework.data.repository.CrudRepository;
 public interface ItemRepository extends CrudRepository<Item, Integer> {
 @Query(value = "SELECT * FROM item WHERE name = ?1", nativeQuery = true)
     Item itemFindByName(String name);
-            }
+}

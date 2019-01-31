@@ -15,7 +15,6 @@ public class Item {
     @Length(min=5, max=45)
     private String description;
     private Float taxable_value;
-    @Length(min=5, max=45)
     private String status;
     private Integer tax_exempt_code;
 
@@ -65,4 +64,5 @@ public class Item {
     public void setTax_exempt_code(Integer tax_exempt_code) {
         this.tax_exempt_code = tax_exempt_code;
     }
+
 }
