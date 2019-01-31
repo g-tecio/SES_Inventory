@@ -4,7 +4,7 @@ import org.hibernate.validator.constraints.Length;
 import javax.persistence.*;
 
 @Entity // This tells Hibernate to make a table out of this class
-@Table(name = "Item")
+@Table(name = "item")
 public class Item {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
@@ -16,7 +16,6 @@ public class Item {
     private String description;
     @Length(min=5, max=45)
     private Float taxable_value;
-    @Length(min=5, max=45)
     private String status;
     @Length(min=5, max=45)
     private Integer tax_exempt_code;
@@ -67,4 +66,5 @@ public class Item {
     public void setTax_exempt_code(Integer tax_exempt_code) {
         this.tax_exempt_code = tax_exempt_code;
     }
+
 }
