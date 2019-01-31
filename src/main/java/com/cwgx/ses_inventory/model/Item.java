@@ -14,10 +14,8 @@ public class Item {
     private String name;
     @Length(min=5, max=45)
     private String description;
-    //@Length(min=5, max=45)
     private Float taxable_value;
     private String status;
-    //@Length(min=5, max=45)
     private Integer tax_exempt_code;
 
     public Integer getId_Item() {
