@@ -17,11 +17,11 @@ public class ItemSpecsResource {
         return itemspecsRepository.findAll();
     }
 
-    @RequestMapping(path = "/itemspecs/{specsitem}", method = RequestMethod.GET)
-    public @ResponseBody ItemSpecs userFindByName(@PathVariable Integer stockitem) {
+    //@RequestMapping(path = "/itemspecs/{specsitem}", method = RequestMethod.GET)
+    //public @ResponseBody ItemSpecs userFindByName(@PathVariable Integer stockitem) {
         // This returns a JSON or XML with the users
-        return itemspecsRepository.itemspecsFindById(stockitem);
-    }
+      //  return itemspecsRepository.itemspecsFindById(stockitem);
+    //}
 
     @PostMapping("/itemspecs/post")
     ItemSpecs newStockItem(@RequestBody ItemSpecs newStockItem){

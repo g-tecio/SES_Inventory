@@ -3,6 +3,7 @@
 .settings
 .springBeans
 .idea
+*.iml
 target
 bin
 classes
