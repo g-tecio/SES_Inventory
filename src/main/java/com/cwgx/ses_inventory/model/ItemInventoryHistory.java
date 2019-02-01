@@ -1,29 +1,28 @@
 package com.cwgx.ses_inventory.model;
-
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.Date;
 
 @Entity // This tells Hibernate to make a table out of this class
 @Table(name = "item_inventory_history")
 public class ItemInventoryHistory {
-
-    private Integer item_inventory;
+    @Id
+    @GeneratedValue(strategy= GenerationType.AUTO)
+    private Integer item_inventory_id;
     //private Integer beginning_unit_count;
     private Integer gross_sales_unit_count;
     private Integer return_to_vendor_unit_count;
     private Integer ending_unit_count;
     private Integer return_unit_count;
-    private Integer tranfer_in_unit_count;
+    private Integer transfer_in_unit_count;
     private Integer transfer_out_unit_count;
     private Date timestamp;
 
-    public Integer getItem_inventory() {
-        return item_inventory;
+    public Integer getItem_inventory_id() {
+        return item_inventory_id;
     }
 
-    public void setItem_inventory(Integer item_inventory) {
-        this.item_inventory = item_inventory;
+    public void setItem_inventory_id(Integer item_inventory_id) {
+        this.item_inventory_id = item_inventory_id;
     }
 
     public Integer getGross_sales_unit_count() {
@@ -58,12 +57,12 @@ public class ItemInventoryHistory {
         this.return_unit_count = return_unit_count;
     }
 
-    public Integer getTranfer_in_unit_count() {
-        return tranfer_in_unit_count;
+    public Integer getTransfer_in_unit_count() {
+        return transfer_in_unit_count;
     }
 
-    public void setTranfer_in_unit_count(Integer tranfer_in_unit_count) {
-        this.tranfer_in_unit_count = tranfer_in_unit_count;
+    public void setTransfer_in_unit_count(Integer transfer_in_unit_count) {
+        this.transfer_in_unit_count = transfer_in_unit_count;
     }
 
     public Integer getTransfer_out_unit_count() {

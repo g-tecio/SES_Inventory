@@ -13,14 +13,14 @@ public class ItemInventoryHistoryResource {
     @Autowired
     private ItemInventoryHistoryRepository itemInventoryHistoryRepository;
 
-    @RequestMapping(path = "/itemInventoryHistory", method = RequestMethod.GET)
+    @RequestMapping(path = "/itemInventoryHH", method = RequestMethod.GET)
     public @ResponseBody
     Iterable<ItemInventoryHistory> getAllItems() {
         // This returns a JSON or XML with the users
         return itemInventoryHistoryRepository.findAll();
     }
-    @PostMapping("/itemInventory/post")
-    ItemInventoryHistory newItem(@RequestBody ItemInventoryHistory newItem){
-        return itemInventoryHistoryRepository.save(newItem);
+    @PostMapping("/itemInventoryH/post")
+    ItemInventoryHistory newitemhh(@RequestBody ItemInventoryHistory newitemhh){
+        return itemInventoryHistoryRepository.save(newitemhh);
     }
 }
