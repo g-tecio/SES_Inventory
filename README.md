@@ -8,11 +8,11 @@ Build the code and deploy with AWS SAM.
 
 mvn clean package
 
-aws cloudformation package --template-file sam.yaml --output-template-file target/output-sam.yaml --s3-bucket lambda-cfn
+aws cloudformation package --template-file sam.yaml --output-template-file target/output-sam.yaml --s3-bucket <bucket_name>
  
-aws cloudformation deploy --template-file target/output-sam.yaml --stack-name spring-boot-lambda --capabilities CAPABILITY_IAM
+aws cloudformation deploy --template-file target/output-sam.yaml --stack-name <stack_name> --capabilities CAPABILITY_IAM
  
-aws cloudformation describe-stacks --stack-name spring-boot-lambda
+aws cloudformation describe-stacks --stack-name <stack_name>
 
 
 # Run

@@ -15,7 +15,6 @@ public class ItemResource {
         // This returns a JSON or XML with the users
         return itemRepository.findAll();
     }
-
     @RequestMapping(path = "/item/{itemName}", method = RequestMethod.GET)
     public @ResponseBody Item userFindByName(@PathVariable String itemName) {
         // This returns a JSON or XML with the users
@@ -23,7 +22,7 @@ public class ItemResource {
     }
 
     @PostMapping("/item/post")
-    Item newItem(@RequestBody Item newItem){
-        return itemRepository.save(newItem);
+    Item newCategory(@RequestBody Item newCategory){
+        return itemRepository.save(newCategory);
     }
 }
