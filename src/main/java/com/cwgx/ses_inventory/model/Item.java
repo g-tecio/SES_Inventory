@@ -48,19 +48,15 @@ public class Item {
     public void setTaxable_value(Float taxable_value) {
         this.taxable_value = taxable_value;
     }
-
     public String getStatus() {
         return status;
     }
-
     public void setStatus(String status) {
         this.status = status;
     }
-
     public Integer getTax_exempt_code() {
         return tax_exempt_code;
     }
-
     public void setTax_exempt_code(Integer tax_exempt_code) {
         this.tax_exempt_code = tax_exempt_code;
     }
